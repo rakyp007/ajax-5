@@ -7,13 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="result"></div>
-    <form>
-      <input type="text" name="login" id="login" placeholder="Логин">
-      <input type="text" name="pass" id="pass" placeholder="Пароль">
-      <span onclick="login()">Войти</span>
-   </form>
-
+        
+    <form  id="main" action="https://jsonplaceholder.typicode.com/users"  method="post">
+        <p>Name: <input type="text" name="ИМЯ"></p>
+        <p>Lastname: <input type="text" name="фамилия"></p> 
+        <button id="submit" onclick="submit()">click</button>
+        <ul id="userList"></ul>
+    </form>
+<button type="button" id="text">Получить текст с сервера</button>
+     <div id="result"></div>
 </body>
-<script src="main.js"></script>
+<script src="get.js"></script>
+<script src="post.js"></script>
 </html>
