@@ -1,6 +1,6 @@
-const logBtn = document.getElementById('text');
-const result = document.getElementById('result')
-logBtn.addEventListener('click', fetchData);
+const textBtn = document.getElementById('text');
+const text = document.getElementById('result')
+textBtn.addEventListener('click', fetchData);
 
 async function fetchData() {
 
@@ -10,7 +10,7 @@ async function fetchData() {
     data.forEach(obj => {
         Object.entries(obj).forEach(([name, username]) => {
 
-        result.innerHTML+=  
+        text.innerHTML+=  
            ` <ol>
                 <li>${obj.name}</li>
                 <li>${obj.username}</li>
